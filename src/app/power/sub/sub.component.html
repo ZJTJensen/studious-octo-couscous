@@ -1,0 +1,9 @@
+<fieldset>
+  <legend>{{myStats.type}}Component</legend>
+
+  <p>Power level: {{myStats.level}}</p>
+
+  <h3 *ngIf="myStats.level > 9000 && myStats.level < 20000">OVER 9000!!!!</h3>
+  <h3 *ngIf="myStats.level > 20000 && myStats.level != 50000">Superlative!</h3>
+  <h3 *ngIf="myStats.level == 50000">The One</h3>
+</fieldset>

@@ -1,0 +1,18 @@
+<fieldset>
+  
+  <legend>PowerComponent</legend>
+  <div id= "top">
+  <form (submit)="onSubmit()">
+    <h3>Initial Power Level</h3>
+    <input name="power" [(ngModel)]="power" type="number"  min='1' max="100">
+    <input type="submit" value="Calculate Powers">
+  </form>
+</div>
+
+
+
+
+<div id="bottom" >
+  <app-sub *ngFor="let stat of stats; let i = index" [myStats]='stats[i]'></app-sub>
+</div>
+</fieldset>
